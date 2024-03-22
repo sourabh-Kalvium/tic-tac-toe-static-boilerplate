@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#main{
+    background-color: dodgerblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    -webkit-text-stroke: 5px white;
+    color: #FAB201;
+    font-size: 70px;
+}
+h3{
+    color: rgb(251, 251, 251);
+}
+#game-div{
+    /* border: 1px solid red; */
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,100px);
+    gap: 5px;
+    
+}
+#game-div>div{
+    border: 1px solid ;
+    border-radius: 10px;
+    background-color: white;
+    color: yellow;
+    font-size: 75px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.winner-div{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.winner-div-display{
+    display: block;
+    display: flex;
+}
+
+.winner-div>h3{
+    font-size: 30px;
+}
+.winner-div>button{
+ background-color: yellow;
+ border-radius: 5px;
+ border: 1px solid;
+ padding: 5px;
+}
+.winner-div span{
+    color: green;
+    font-size: 50px;
+}
